@@ -13,6 +13,19 @@ Dependencies are installed with [composer](http://getcomposer.org/). You can use
 
 `$ curl -s http://getcomposer.org/installer | php`  
 `$ php composer.phar install`
+
+To add GettextExtractor into your project, add to `composer.json`
+
+```
+"repositories": [
+	{
+	  "type": "vcs",
+	  "url": "https://github.com/webwingscz/gettext-extractor"
+	}
+  ]
+```
+
+and run  `composer require --dev webwings/gettext/extractor`
 	
 
 Usage
